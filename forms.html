@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <button>OUTSIDE BUTTON</button>
+    <form action="/tacos">
+        <button type="submit">PLEASE DO NOT SUBMIT THE FORM</button>
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username" name="username">    
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input id="password" type="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="color">Enter a Color:</label>
+            <input id="color" type="color" name="color">
+        </p>
+        <p>
+            <label for="number">Enter a Number:</label>
+            <input id="number" type="number" placeholder="enter a number" name="number">
+        </p>
+        <button>Submit</button>
+        <input type="submit" value="Click Me!">
+    </form>
+
+    <hr>
+    
+    <h2>검색 폼 필드하기</h2>
+    <h3>Search Naver</h3>
+    <form action="https://search.naver.com/search.naver">
+        <input type="text" name="query">
+        <button>Search Naver</button>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+    <hr>
+
+    <h2>CheckBox, Radio, Select창 만들기</h2>
+    <form action="/birds">
+        <h3>CheckBox(2개 이상 체크 가능) </h3>
+        <p>
+            <input type="checkbox" name="agree_tos" id="agree" checked>
+            <label for="agree">I agree to everything</label>
+        </p>
+        <h3>Radio(1개만 체크 가능)</h3>
+        <p>
+            <input type="radio" name="size" id="S" value="S">
+            <label for="S">S</label>
+            <input type="radio" name="size" id="M" value="M">
+            <label for="M">M</label>
+            <input type="radio" name="size" id="L" value="L">
+            <label for="L">L</label>
+        </p>
+        <h3>Select</h3>
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak" selected>Steak</option>
+            </select>
+        </p>
+        <h3>Range</h3>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="1" max="100" value="50" name="cheese_level">
+        </p>
+        <h3>textarea</h3>
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea name="Requests?" id="requests" cols="40" rows="10" placeholder="Type something here"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <p>
+            <label for="first">Enter First Name</label>
+            <input type="text" name="fist" id="first" required>
+        </p>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="50" required>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </p>
+        <p>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
