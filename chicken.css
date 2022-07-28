@@ -1,0 +1,16 @@
+h1 {
+    text-align: center; /*텍스트 정렬*/
+    font-weight: normal; /* 폰트 굵기 */
+    text-decoration: #ff8400 underline wavy;
+    letter-spacing: 15px; /* 자간 */
+    font-size: 50px; /* 폰트 크기 */
+    font-family: Monospace, Impact, Georgia, Arial; /* 폰트 변경 */
+}
+
+a {
+    text-decoration: none; 
+}
+
+p {
+    line-height: 2; /* 줄간격 */
+}
