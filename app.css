@@ -1,0 +1,43 @@
+/* * {
+    background-color: cyan;
+} */
+
+body {
+    background-color: #edf2fb;
+}
+
+button {
+    font-size: 30px;
+}
+
+h1, h2 {
+    color: #023e8a;
+}
+
+#signup {
+    background-color: #03045e;
+    color: #ffffff;
+}
+
+span {
+    color: #ff5400;
+}
+
+.tag {
+    background-color: #00b4d8;
+    color: #fff;
+    font-size: 16px;
+}
+
+/*  자손 선택자를 통해 불필요한 class 사용을 줄일 수 있음 */
+span a {
+    color: #ff5400;
+}
+
+.post a {
+    color: #ff5400
+}
+
+footer a {
+    color: #004b23;
+}
