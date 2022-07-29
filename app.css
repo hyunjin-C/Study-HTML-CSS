@@ -67,3 +67,48 @@ input[type="password"] {
 a[href*="google"] {
     color: #2d00f7;
 }
+
+/* 의사 클래스(pseudo-class) 
+상태를 특정하는 키워드
+의사 클래스를 통해 특정 상황에 효과를 넣을 수 있음
+*/
+
+/* 커서를 올려두었을 경우 색이 바뀌도록 */
+.post button:hover {
+    background-color: #ef6351;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*활성화 되었을 때 색이 바뀌도록*/
+.post button:active {
+    background-color: #6a00f4;
+    color: #fff;
+}
+
+/* 형제 그룹 내 어떤 위치를 선택하여 색이 바뀌도록 */
+.post:nth-of-type(2n) {
+    background-color: #cfe1b9;
+}
+
+/* 의사 요소(pseudo-element)
+원래 의사요소 앞에 :: 2개를 붙여야 하지만 크롬에서는 1개만 적어도 유추해낸다.
+*/
+
+/* 첫 번째 글자만 선택 */
+h2::first-letter {
+    font-size: 50px;
+}
+
+/* 첫 번째 줄만 선택 */
+p::first-line {
+    color: purple;
+}
+
+/* 커서를 클릭하면서 글자에 드래그하면 색이 바뀜 */
+p::selection {
+    background-color: #ff70a6;
+}
