@@ -3,7 +3,7 @@
 } */
 
 body {
-    background-color: #edf2fb;
+    background-color: #e9f5db;
 }
 
 button {
@@ -14,15 +14,17 @@ h1, h2 {
     color: #023e8a;
 }
 
+span {
+    color: #ff5400;
+}
+
+/* ID 선택자 */
 #signup {
     background-color: #03045e;
     color: #ffffff;
 }
 
-span {
-    color: #ff5400;
-}
-
+/* 클래스 선택자 */
 .tag {
     background-color: #00b4d8;
     color: #fff;
@@ -32,12 +34,36 @@ span {
 /*  자손 선택자를 통해 불필요한 class 사용을 줄일 수 있음 */
 span a {
     color: #ff5400;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .post a {
     color: #ff5400
+
 }
 
 footer a {
     color: #004b23;
+}
+
+/* 인접 선택자 */
+h2 + button {
+    font-size: 20px;
+    background-color: mediumseagreen;
+    color: white;
+}
+
+/* 직계 자손 선택자 */
+footer > a {
+    color: #ff6392;
+}
+
+/* 속성 선택자 */
+input[type="password"] {
+    color: #5aa9e6;
+}
+
+a[href*="google"] {
+    color: #2d00f7;
 }
