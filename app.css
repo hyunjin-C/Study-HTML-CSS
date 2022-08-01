@@ -112,3 +112,21 @@ p::first-line {
 p::selection {
     background-color: #ff70a6;
 }
+
+/* 위의 .post button:hover와 충돌함.
+하지만 .post button:hover의 스타일이 적용되는 이유는 선택자가 더 구체적이기 때문.
+ID > Class(클래스, 속성, 가상클래스 선택자) > Element(요소, 가상요소 선택자) 우선 순위를 가짐.
+*/
+button:hover {
+    background-color: olive; /* 충돌 */
+    font-size: 10px; /* 충돌X */
+}
+
+nav {
+    color: green;
+}
+
+button, input {
+    color: inherit; /* 상위 항목(nav)의 특성을 상속 받음. green색 */
+}
+
