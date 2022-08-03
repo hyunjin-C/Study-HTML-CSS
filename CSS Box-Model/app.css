@@ -1,7 +1,15 @@
+html {
+    font-size: 15px;
+}
+
 body {
     margin: 0;
     /* body 태그의 기본 여백 값을 지움 -> 낭비하는 공간을 없앨 수 있음, 효율적인 작업 */
 }
+
+/* 픽셀(px)
+: 가장 흔히 사용되는 절대 단위
+디스플레이의 크기에 따라서는 달라질 수 있지만 디스플레이 안에서는 절대적인 크기 */
 
 div {
     width: 200px;
@@ -55,4 +63,77 @@ button {
     padding: 0 20px; /* vertical horizontal */
     padding: 0 10px 20px; /* top vertical bottom */
     padding: 10px 20px 30px 40px; /* top right bottom left */
+}
+
+/* perentage(%) 
+: 상대적, 너비나 높이 지정에 가장 많이 사용됨.
+너비 요소의 50%라고 설정하면 부모 요소의 절반 너비로 설정됨. */
+
+#percentages{
+    width: 400px;
+    height: 400px;
+    background-color: #bde0fe;
+}
+
+#percentages div {
+    width: 50%;
+    height: 50%;
+    background-color: #a2d2ff;
+}
+
+h2 {
+    border: 5px solid black;
+    font-size: 40px;
+    line-height: 200%; /* 80px와 같게 나옴, 부모 요소가 아닌 폰트 크기 기준 */
+}
+
+/* em
+: 상대적, 부모의 글꼴 크기에 따라 배수로 설정됨.중첩되면 점점 배가 됨. */
+
+h3 {
+    font-size: 2em; /* 40px */
+    margin-left: 1em; /* 20px 글자 크기에 따라 여백의 크기도 달라짐*/
+}
+
+h4 {
+    font-size: 1.5em; /* 30px */
+}
+
+p {
+    font-size: 1em; /* 20px */
+}
+
+#ems {
+    font-size: 15px;
+}
+
+button {
+    font-size: 1em; /* 20px */
+    padding: 0 1em; /* 0 20px */
+    border-radius: 0.5em; /* 10px */
+    background-color: #ffb703;
+}
+
+#ems ul {
+    font-size: 1.2em;
+}
+
+/* rem
+:중첩될 때의 문제점을 해결할 수 있음. 글꼴의 크기를 부모 요소의 크기에 따라
+바꾸지 않고 루트 HTML 요소의 글씨 크기에 따라 바뀜. */
+
+#rems h3 {
+    font-size: 3rem;
+}
+
+#rems h4 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
 }
